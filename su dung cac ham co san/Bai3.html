@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let string=prompt("Nhap text: ")
+    let upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   let lower= 'abcdefghijklmnopqrstuvwxyz';
+    let arrResult=[];
+    for(let i=0;i<string.length;i++){
+        if(upper.indexOf(string[i]) !==-1){
+            arrResult.push(string[i].toLowerCase());
+        } else if(lower.indexOf(string[i]) !==-1){
+            arrResult.push(string[i].toUpperCase());
+        } else{
+            arrResult.push(string[i]);
+        }
+    }
+    document.write('BEFORE: '+string+'<br/>');
+    document.write('SWAP: '+arrResult.join(''));
+</script>
+</body>
+</html>

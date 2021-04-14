@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("Nhap ");
+    let str=a.toString();
+    let arr=[str[0]];
+    for(let i=1;i<str.length;i++){
+        if(str[i-1]%2==0 &&str[i]%2==0){
+            arr[arr.length]='-';
+            arr[arr.length]=str[i];
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    document.write(arr.join(''));
+</script>
+</body>
+</html>
